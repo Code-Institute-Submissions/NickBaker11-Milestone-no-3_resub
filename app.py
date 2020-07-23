@@ -2,14 +2,17 @@ import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+if os.path.exists("env.py"):
+    import env
 
 
 app = Flask(__name__)
 
 
-app.config['MONGO_DBNAME'] = 'dino-index'
-app.config['MONGO_URI'] = 'mongo "mongodb+srv://cluster0.pgi7y.mongodb.net/dino-index" --username dinoguy'
+secret_key = os.environ.get('secret_key')
 
+app.config['MONGO_DBNAME'] = 'dino-index'
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
