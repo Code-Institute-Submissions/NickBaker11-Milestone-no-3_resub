@@ -16,4 +16,6 @@ This project will be an educational database aimed at children and teenagers wit
 ##Credits
 ##Content
 ##Media
+* logo image taken from https://www.netclipart.com/isee/iwoToh_jurassic-park-t-rex-skull/
+* background_img taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg
 ##Acknowledgements
