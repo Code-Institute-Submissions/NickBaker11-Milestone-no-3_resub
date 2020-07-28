@@ -1,8 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    {% block content%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+  </head>
 
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>The Dinosaur Index</h1>
+          </div>
+        </div>
+        <div class="row">
+          <ul id="navbar" class="list-inline-item">
+            <li class="col-3">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="col-3"><a href="templates/main-page.html">Database</a></li>
+            <li class="col-3"><a href="final-page.html">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <h2></h2>
+    <img class="background_img" src="{{ url_for('static', filename='images/Skeleton2.jpg') }}" alt="Dinosaur skeleton">
+    <div class="container">
+      <div class="row">
+        <div class="col-8">Database</div>
+        <div class="col-4">
+            <img src="#" alt="">
+        </div>
+      </div>
+      <!--accordion dropdwon for text-->
+    </div>
+    <button class="collapsible">Add more content</button>
+    <div>
+      <p>
+        Dinosaurs have been gone from our planet for roughly 65 million years,
+        yet people are still fascinated by them.
+      </p>
+    </div>
+    
+    {% block content%}
     {% endblock %}
+
+    <script src="{{ url_for('static', filename='javascript/main.js') }}"></script>
   </body>
 </html>
