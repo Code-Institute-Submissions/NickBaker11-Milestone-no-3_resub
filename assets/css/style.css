@@ -12,7 +12,8 @@
     margin-left: auto;
     right: 0%;
     left: 0%;
-    
+    z-index: -1;
+    height: 90%;
 }
 h1, h2{
     text-align: center;
@@ -21,12 +22,11 @@ h1, h2{
 ul{
     list-style-type: none;
     text-align: center;
-    font-family: Indie Flower, 'sans-serf'
 }
 li{
     display: inline;
 }
-p{
+#intro-text, #final-page-para{
     text-align: center;
     max-width: 85%;
     margin-left: auto;
