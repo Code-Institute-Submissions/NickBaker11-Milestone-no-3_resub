@@ -12,6 +12,7 @@ This project will be an educational database aimed at children and teenagers wit
 *I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
 
 ##Testing
+* Testing my links- 'logo', 'home', 'database', 'more info' and 'add' by clicking on them. None curretnly working- reason, url not found.
 ##Deployment
 ##Credits
 ##Content

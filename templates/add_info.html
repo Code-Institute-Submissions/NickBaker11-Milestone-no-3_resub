@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% block content %} Add dinosaur information {% endblock %}
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <label for="dino-name">First Name:</label>
+        <input/>
+      </div>
+      <div class="input-field col s12">
+        <select>
+          <label id="time_period" for="time_period">Discovered In:</label>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Triassic</option>
+          <option value="2">Jurassic</option>
+          <option value="3">Cretaceous</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <label for="diet">Diet:</label>
+        <input id="diet" type="text" class="validate" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <label for="height">Height:</label>
+        <input id="Height" type="text" class="validate" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <label for="speed">Speed:</label>
+        <input id="Speed" type="text" class="validate" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <label for="disc_in">Discovered In:</label>
+        <input id="disc_in" type="text" class="validate" />
+      </div>
+    </div>
+  </form>
+</div>
