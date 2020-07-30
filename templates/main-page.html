@@ -2,17 +2,14 @@
 {% block content %}
 
     {% for info in dinoInfo %}
-        {{info.name}}
-        {{info.time_period}}
-        {{info.diet}}
-        {{info.height}}
-        {{info.speed}}
-        {{info.discovered_in}}
+        Name:{{info.name}}<br>
+        Time Period:{{info.time_period}}<br>
+        Diet:{{info.diet}}<br>
+        Height:{{info.height}}<br>
+        Speed:{{info.speed}}<br>
+        Discovered in:{{info.discovered_in}}<br>
     {% endfor %}
 
-    <form>
-        <input type="text">
-        <input type="submit" value="Submit">
-    </form>
+    
 
 {% endblock %}

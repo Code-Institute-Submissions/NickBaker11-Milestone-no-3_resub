@@ -23,6 +23,11 @@ def get_dinoInfo():
     return render_template('main-page.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
+@app.route("/add_info")
+def add_info():
+    return render_template("add_info.html")
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
