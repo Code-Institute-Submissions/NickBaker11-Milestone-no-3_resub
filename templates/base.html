@@ -25,12 +25,12 @@
 
   <body>
     <header>
-    {% block header %}
+    
       <nav>
       <!-- navbar -->
         <div class="nav-wrapper #2e7d32 green darken-3">
           <a
-            href="{{ url_for('static', filename='index') }}"
+            href="{{ url_for('index') }}"
             class="brand-logo"
             >The Dinosaur Index</a
           >
@@ -39,33 +39,31 @@
           >
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="{{ url_for('static', filename='index') }}">Home</a>
+              <a href="{{ url_for('index') }}">Home</a>
             </li>
             <li>
-              <a href="{{ url_for('static', filename='base') }}">Database</a>
+              <a href="{{ url_for('main_page') }}">Database</a>
             </li>
             <li>
-              <a href="{{ url_for('static', filename='finalpage') }}"
-                >More Info</a
-              >
+              <a href="{{ url_for('final_page') }}">More Info</a>
             </li>
           </ul>
         </div>
         <!-- mobile navbar -->
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="{{ url_for('static', filename='index') }}">Home</a></li>
+        <ul class="sidenav #2e7d32 green darken-3" id="mobile-demo">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
           <li>
-            <a href="{{ url_for('static', filename='base') }}">Database</a>
+            <a href="{{ url_for('main_page') }}">Database</a>
           </li>
           <li>
-            <a href="{{ url_for('static', filename='final-page') }}"
+            <a href="{{ url_for('final_page') }}"
               >More Info</a
             >
           </li>
         </ul>
       </nav>
     </header>
-    {% endblock%}
+    
     <h2>Welcome to a long lost world!</h2>
     <img
       class="background_img"
@@ -76,9 +74,12 @@
         Dinosaurs have been gone from our planet for roughly 65 million years,
         yet people are still fascinated by them.
       </p>
-    </div>
+    
 
-    {% block content%} {% endblock %}
+    {% block content%} 
+    <a class="btn-floating btn-large #2e7d32 green darken-3"
+      ><i class="material-icons">edit</i></a
+    >{% endblock %}
     <a class="btn-floating btn-large #2e7d32 green darken-3"
       ><i class="material-icons">edit</i></a
     >

@@ -18,9 +18,20 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
-@app.route('/get_dinoInfo')
-def get_dinoInfo():
-    return render_template('main-page.html', dinoInfo=mongo.db.dinoInfo.find())
+@app.route('/main_page')
+def main_page():
+    return render_template('main_page.html', dinoInfo=mongo.db.dinoInfo.find())
+
+
+@app.route('/index')
+def index():
+    return render_template('index.html', dinoInfo=mongo.db.dinoInfo.find())
+
+
+@app.route('/final_page')
+def final_page():
+    return render_template(
+        'final_page.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
 @app.route("/add_info")

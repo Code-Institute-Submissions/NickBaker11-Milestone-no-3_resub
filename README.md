@@ -7,16 +7,18 @@ This project will be an educational database aimed at children and teenagers wit
 *As a user want to be able to update and delete the information I am inputting if there is new information to add   to what I already have.
 
 ##Technologies Used
-*I will likely use Bootstrap to assist with my page layout- https://getbootstrap.com/
-*I will likely use hvr.css to add hover effects to elements on my page-https://ianlunn.github.io/Hover/
-*I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
+* ~~I will likely use Bootstrap to assist with my page layout- https://getbootstrap.com/~~ 
+* I will likely use hvr.css to add hover effects to elements on my page-https://ianlunn.github.io/Hover/
+* I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
+* I am using Materialize for layout and navbar- I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
+
 
 ##Testing
-* Testing my links- 'logo', 'home', 'database', 'more info' and 'add' by clicking on them. None curretnly working- reason, url not found.
+* Testing my links- 'logo', 'home', 'database', 'more info' and 'add' by clicking on them. Update, all now working and navigating to the correct place apart from 'add'
 ##Deployment
 ##Credits
 ##Content
-* 'coll' in main.js is from w3schools - https://www.w3schools.com/howto/howto_js_collapsible.asp
+* <header>Is from materialize</header>
 ##Media
 * logo image taken from https://www.netclipart.com/isee/iwoToh_jurassic-park-t-rex-skull/
 * background_img taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg

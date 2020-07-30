@@ -14,27 +14,9 @@
       <img class="background_img" src="assets/images/Skeleton2.jpg" alt="Dinosaur skeleton" />
 
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>The Dinosaur Index</h1>
-          </div>
-        </div>
-        <div class="row">
-          <ul id="navbar" class="list-inline-item">
-            <li class="col-3">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="col-3"><a href="main-page.html">Database</a>
-            </li>
-            <li class="col-3"><a href="final-page.html">More Info</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    
-    <h2>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h2>
+{% extends 'base.html' %}
+{% block content%}
+ <h2>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h2>
     <p id="intro-text">
      Dinosaurs have been gone from our planet for roughly 65 million years, yet people are still fascinated by them. 
 
@@ -78,6 +60,8 @@
       vehicula. Maecenas commodo neque tellus. Phasellus nec vehicula sem.
       Pellentesque non molestie urna, et pellentesque lacus.
     </p>
+{% endblock %}
+    
     <script src="assets/javascript/main.js"></script>
   </body>
 </html>

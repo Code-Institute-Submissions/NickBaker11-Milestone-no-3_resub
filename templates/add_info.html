@@ -1,14 +1,14 @@
 {% extends 'base.html' %} {% block content %} Add dinosaur information {% endblock %}
 <div class="row">
-  <form class="col s12">
+  <form class="col s12" method="POST" action="">
     <div class="row">
       <div class="input-field col s12">
-        <label for="dino-name">First Name:</label>
-        <input/>
+        <label for="name">First Name:</label>
+        <input id="name" type="text" class="validate" required/>
       </div>
       <div class="input-field col s12">
         <select>
-          <label id="time_period" for="time_period">Discovered In:</label>
+          <label id="time_period" for="time_period">Time Period:</label>
           <option value="" disabled selected>Choose your option</option>
           <option value="1">Triassic</option>
           <option value="2">Jurassic</option>
@@ -19,25 +19,25 @@
     <div class="row">
       <div class="input-field col s12">
         <label for="diet">Diet:</label>
-        <input id="diet" type="text" class="validate" />
+        <input id="diet" type="text" class="validate" required/>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <label for="height">Height:</label>
-        <input id="Height" type="text" class="validate" />
+        <input id="Height" type="text" class="validate" required/>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <label for="speed">Speed:</label>
-        <input id="Speed" type="text" class="validate" />
+        <input id="Speed" type="text" class="validate" required/>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
-        <label for="disc_in">Discovered In:</label>
-        <input id="disc_in" type="text" class="validate" />
+        <label for="discovered_in">Discovered In:</label>
+        <input id="discovered_in" type="text" class="validate" required/>
       </div>
     </div>
   </form>

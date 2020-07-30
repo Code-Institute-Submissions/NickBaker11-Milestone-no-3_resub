@@ -6,22 +6,17 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.5.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
     <title>Document</title>
   </head>
 
   <body>
+  <header>
 {% extends 'base.html' %}
-{% block header%}
-{% endblock %}
-    <h2>Where to visit Dinosaurs</h2>
-    <nav>
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="#">
-    </nav>
+{% block content %}
+</header>
+ <h2>Where to visit Dinosaurs</h2>
+  
     <img class="background_img" src="assets/images/Skeleton2.jpg" alt="Dinosaur skeleton"/>
     <p id="final-page-para"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt
       risus a ullamcorper rhoncus. Praesent eu erat vulputate, tincidunt lorem
@@ -62,7 +57,10 @@
       molestie sit amet. Ut congue felis vel arcu vehicula, ut porttitor sapien
       vehicula. Maecenas commodo neque tellus. Phasellus nec vehicula sem.
       Pellentesque non molestie urna, et pellentesque lacus.</p>
+{% endblock %}
 
-    <script src="assets/javascript/main.js"></script>
+   
+
+    <script src="{{ url_for('static', filename='javascript/main.js') }}"></script>
   </body>
 </html>
