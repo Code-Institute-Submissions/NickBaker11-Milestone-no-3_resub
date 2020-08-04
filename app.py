@@ -34,9 +34,9 @@ def final_page():
         'final_page.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
-@app.route("/add_info")
+@app.route('/add_info')
 def add_info():
-    return render_template("add_info.html")
+    return render_template('add_info.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
 if __name__ == '__main__':

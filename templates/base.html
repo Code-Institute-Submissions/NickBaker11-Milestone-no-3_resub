@@ -64,30 +64,18 @@
       </nav>
     </header>
     
-    <h2>Welcome to a long lost world!</h2>
+   
     <img
       class="background_img"
       src="{{ url_for('static', filename='images/Skeleton2.jpg') }}"
       alt="Dinosaur skeleton"
     />
-      <p>
-        Dinosaurs have been gone from our planet for roughly 65 million years,
-        yet people are still fascinated by them.
-      </p>
-    
+      
 
     {% block content%} 
-    <a class="btn-floating btn-large #2e7d32 green darken-3"
-      ><i class="material-icons">edit</i></a
-    >{% endblock %}
-    <a class="btn-floating btn-large #2e7d32 green darken-3"
-      ><i class="material-icons">edit</i></a
-    >
-    <a
-      href="{{ url_for('static', filename='add-info.html') }}"
-      class="btn-floating btn-large #2e7d32 green darken-3"
-      ><i class="material-icons">add</i></a
-    >
+    
+    {% endblock %}
+    
     <!-- scripts -->
     <script src="{{ url_for('static', filename='javascript/main.js') }}"></script>
     <script

@@ -1,15 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for info in dinoInfo %}
-        Name:{{info.name}}<br>
-        Time Period:{{info.time_period}}<br>
-        Diet:{{info.diet}}<br>
-        Height:{{info.height}}<br>
-        Speed:{{info.speed}}<br>
-        Discovered in:{{info.discovered_in}}<br>
-    {% endfor %}
-
-    
-
+    <h2>Your Dinosaur Database</h2>
+    {% include "database.html" %}
+    <br>
+        <a href="{{ url_for('static', filename='add-info.html') }}"
+        class="btn-floating btn-large #2e7d32 green darken-3"
+         ><i class="material-icons">add</i></a>
 {% endblock %}

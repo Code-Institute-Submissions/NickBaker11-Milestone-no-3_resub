@@ -1,0 +1,17 @@
+{% block content %}
+
+    {% for info in dinoInfo %}
+        <strong>Name:{{info.name}}</strong><br>
+        Time Period:{{info.time_period}}<br>
+        Diet:{{info.diet}}<br>
+        Height:{{info.height}}<br>
+        Speed:{{info.speed}}<br>
+        Discovered in:{{info.discovered_in}}<br>
+        <br>
+        <a class="btn-floating btn-large #2e7d32 green darken-3"
+      ><i class="material-icons">edit</i></a
+    >
+    <br>
+    {% endfor %}
+    
+{% endblock %}
