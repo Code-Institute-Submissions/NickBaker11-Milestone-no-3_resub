@@ -18,14 +18,14 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
-@app.route('/main_page')
-def main_page():
-    return render_template('main_page.html', dinoInfo=mongo.db.dinoInfo.find())
-
-
 @app.route('/index')
 def index():
     return render_template('index.html', dinoInfo=mongo.db.dinoInfo.find())
+
+
+@app.route('/main_page')
+def main_page():
+    return render_template('main_page.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
 @app.route('/final_page')
@@ -34,8 +34,20 @@ def final_page():
         'final_page.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
-@app.route('/add_info')
+@app.route('/add_info', methods=["GET", "POST"])
 def add_info():
+    if request.method == "POST":
+        info = {
+            "name": request.form.get("name"),
+            "time_period": request.form.get("time_period"),
+            "diet": request.form.get("diet"),
+            "height": request.form.get("height"),
+            "speed": request.form.get("speed"),
+            "discovered_in": request.form.get("discovered_in")
+        }
+        mongo.db.dinoInfo.insert_one(info)
+        return redirect(url_for("main_page"))
+
     return render_template('add_info.html', dinoInfo=mongo.db.dinoInfo.find())
 
 

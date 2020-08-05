@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.5.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
-    <title>Document</title>
-  </head>
-
-  <body>
-  <header>
 {% extends 'base.html' %}
 {% block content %}
-</header>
+
  <h2>Where to visit Dinosaurs</h2>
   
     
@@ -58,9 +44,3 @@
       vehicula. Maecenas commodo neque tellus. Phasellus nec vehicula sem.
       Pellentesque non molestie urna, et pellentesque lacus.</p>
 {% endblock %}
-
-   
-
-    <script src="{{ url_for('static', filename='javascript/main.js') }}"></script>
-  </body>
-</html>

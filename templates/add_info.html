@@ -1,53 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html'%} {% block content %}
+<!--name category-->
 <div class="row">
   <form class="col s12" method="POST" action="">
     <div class="row">
       <div class="input-field col s12">
         <label for="name">First Name:</label>
-        <input id="name" type="text" class="validate" required/>
+        <input id="name" type="text" class="validate" required />
       </div>
+    </div>
+        <!--time period category-->
+    <!-- <div class="row">
       <div class="input-field col s12">
         <select>
-          <label id="time_period" for="time_period">Time Period:</label>
           <option value="" disabled selected>Choose your option</option>
           <option value="1">Triassic</option>
           <option value="2">Jurassic</option>
           <option value="3">Cretaceous</option>
         </select>
+        <label id="time_period" for="time_period">Time Period:</label>
       </div>
-    </div>
+    </div> -->
+    <!--diet category-->
     <div class="row">
       <div class="input-field col s12">
         <label for="diet">Diet:</label>
-        <input id="diet" type="text" class="validate" required/>
+        <input id="diet" type="text" class="validate" required />
       </div>
     </div>
+    <!--speed category-->
     <div class="row">
       <div class="input-field col s12">
         <label for="height">Height:</label>
-        <input id="Height" type="text" class="validate" required/>
+        <input id="Height" type="text" class="validate" required />
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <label for="speed">Speed:</label>
-        <input id="Speed" type="text" class="validate" required/>
+        <input id="Speed" type="text" class="validate" required />
       </div>
     </div>
+    <!--discovererd in category-->
     <div class="row">
       <div class="input-field col s12">
         <label for="discovered_in">Discovered In:</label>
-        <input id="discovered_in" type="text" class="validate" required/>
+        <input id="discovered_in" type="text" class="validate" required />
       </div>
     </div>
+    <!--submit button-->
+    <button class="btn #2e7d32 green darken-3" type="submit" name="">
+      Submit
+      <i class="material-icons right"></i>
+    </button>
   </form>
 </div>
+{% endblock %}
