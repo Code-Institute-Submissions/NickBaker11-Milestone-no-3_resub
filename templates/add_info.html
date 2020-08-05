@@ -3,52 +3,52 @@
 <div class="row">
   <form class="col s12" method="POST" action="">
     <div class="row">
-      <div class="input-field col s12">
-        <label for="name">First Name:</label>
-        <input id="name" type="text" class="validate" required />
+      <div class="input-field col s12 green-text text-darken-3">
+        <label class="green-text text-darken-3" for="name">First Name:</label>
+        <input id="name" name="name" type="text" class="validate" required />
       </div>
     </div>
         <!--time period category-->
-    <!-- <div class="row">
+    <div class="row">
       <div class="input-field col s12">
-        <select>
+        <select id="time_period" name="time_period">
           <option value="" disabled selected>Choose your option</option>
-          <option value="1">Triassic</option>
-          <option value="2">Jurassic</option>
-          <option value="3">Cretaceous</option>
+          <option value="Triassic">Triassic</option>
+          <option value="Jurassic">Jurassic</option>
+          <option value="Cretaceous">Cretaceous</option>
         </select>
-        <label id="time_period" for="time_period">Time Period:</label>
+        <label class="green-text text-darken-3" for="time_period">Time Period:</label>
       </div>
-    </div> -->
+    </div>
     <!--diet category-->
     <div class="row">
       <div class="input-field col s12">
-        <label for="diet">Diet:</label>
-        <input id="diet" type="text" class="validate" required />
+        <label class="green-text text-darken-3" for="diet">Diet:</label>
+        <input id="diet" name="diet" type="text" class="validate" required />
       </div>
     </div>
     <!--speed category-->
     <div class="row">
       <div class="input-field col s12">
-        <label for="height">Height:</label>
-        <input id="Height" type="text" class="validate" required />
+        <label class="green-text text-darken-3" for="height">Height:</label>
+        <input id="height" name="height" type="text" class="validate" required />
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
-        <label for="speed">Speed:</label>
-        <input id="Speed" type="text" class="validate" required />
+        <label class="green-text text-darken-3" for="speed">Speed:</label>
+        <input id="speed" name="speed" type="text" class="validate" required />
       </div>
     </div>
     <!--discovererd in category-->
     <div class="row">
       <div class="input-field col s12">
-        <label for="discovered_in">Discovered In:</label>
-        <input id="discovered_in" type="text" class="validate" required />
+        <label class="green-text text-darken-3" for="discovered_in">Discovered In:</label>
+        <input id="discovered_in" name="discovered_in" type="text" class="validate" required />
       </div>
     </div>
     <!--submit button-->
-    <button class="btn #2e7d32 green darken-3" type="submit" name="">
+    <button id="add_submit" class="btn #2e7d32 green darken-3 btn-large" type="submit" name="add_submit">
       Submit
       <i class="material-icons right"></i>
     </button>
