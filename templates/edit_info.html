@@ -6,7 +6,7 @@
     <div class="row">
       <div class="input-field col s12 green-text text-darken-3">
         <label class="green-text text-darken-3" for="name">First Name:</label>
-        <input id="name" name="name" type="text" class="validate" required />
+        <input id="name" name="name" value="{{ info.name }}" type="text" class="validate" required />
       </div>
     </div>
         <!--time period category-->
@@ -25,27 +25,27 @@
     <div class="row">
       <div class="input-field col s12">
         <label class="green-text text-darken-3" for="diet">Diet:</label>
-        <input id="diet" name="diet" type="text" class="validate" required />
+        <input id="diet" name="diet" value="{{ info.diet }}" type="text" class="validate" required />
       </div>
     </div>
     <!--speed category-->
     <div class="row">
       <div class="input-field col s12">
         <label class="green-text text-darken-3" for="height">Height:</label>
-        <input id="height" name="height" type="text" class="validate" required />
+        <input id="height" name="height" value="{{ info.height }}" type="text" class="validate" required />
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
         <label class="green-text text-darken-3" for="speed">Speed:</label>
-        <input id="speed" name="speed" type="text" class="validate" required />
+        <input id="speed" name="speed" value="{{ info.speed }}" type="text" class="validate" required />
       </div>
     </div>
     <!--discovererd in category-->
     <div class="row">
       <div class="input-field col s12">
         <label class="green-text text-darken-3" for="discovered_in">Discovered In:</label>
-        <input id="discovered_in" name="discovered_in" type="text" class="validate" required />
+        <input id="discovered_in" name="discovered_in" value="{{ info.discovered_in }}" type="text" class="validate" required />
       </div>
     </div>
     <!--submit button-->

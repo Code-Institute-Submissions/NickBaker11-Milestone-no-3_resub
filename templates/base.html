@@ -28,7 +28,7 @@
     
       <nav>
       <!-- navbar -->
-        <div class="nav-wrapper #2e7d32 green darken-3">
+        <div id="top" class="nav-wrapper #2e7d32 green darken-3">
           <a
             href="{{ url_for('index') }}"
             class="brand-logo"
@@ -37,7 +37,7 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
             ><i class="material-icons">menu</i></a
           >
-          <ul class="right hide-on-med-and-down">
+          <ul class="hide-on-med-and-down right">
             <li>
               <a href="{{ url_for('index') }}">Home</a>
             </li>
@@ -64,7 +64,10 @@
       </nav>
     </header>
     
-   
+   <a href="#top" id="return_top" class="btn-floating #2e7d32 green darken-3 btn-large" type="submit" name="return_top">
+      
+      <i class="material-icons right">arrow_upward</i>
+    </a>
     <img
       class="background_img"
       src="{{ url_for('static', filename='images/Skeleton2.jpg') }}"
