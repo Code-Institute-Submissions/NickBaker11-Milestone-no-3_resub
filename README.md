@@ -14,7 +14,8 @@ This project will be an educational database aimed at children and teenagers wit
 
 
 ##Testing
-* Testing my links- 'logo', 'home', 'database', 'more info' and 'add' by clicking on them. Update, all now working and navigating to the correct place apart from 'add'
+* Testing my links- 'logo', 'home', 'database', 'more info', 'add', top_return' and 'edit' by clicking on them. All go to their correct url.
+* Testing my CRUD 'create'- Clicking on the #add_info_btn on main_page.html takes the user to add_info.html. This page shows the user the input catagories. THe user can then input the desired data into each - any category that does not have input (aside from the 'Time Period' currently which needs fixing) gets a 'please fill out this field' popup warning. Once the user has finished inputting their data and clicks 'Submit', the data is successfully sent to my mongo db. I have tested this several times and see the data both in my atlas mongo database and on the website itself as the user will see it.
 ##Deployment
 ##Credits
 ##Content

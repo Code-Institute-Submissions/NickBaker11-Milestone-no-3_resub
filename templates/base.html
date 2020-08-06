@@ -31,32 +31,32 @@
         <div id="top" class="nav-wrapper #2e7d32 green darken-3">
           <a
             href="{{ url_for('index') }}"
-            class="brand-logo"
+            class="brand-logo orange-text text-darken-4"
             >The Dinosaur Index</a
           >
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right orange-text text-darken-4"
             ><i class="material-icons">menu</i></a
           >
-          <ul class="hide-on-med-and-down right">
+          <ul class="hide-on-med-and-down right ">
             <li>
-              <a href="{{ url_for('index') }}">Home</a>
+              <a href="{{ url_for('index') }}" class="orange-text text-darken-4">Home</a>
             </li>
             <li>
-              <a href="{{ url_for('main_page') }}">Database</a>
+              <a href="{{ url_for('main_page') }}" class="orange-text text-darken-4">Database</a>
             </li>
             <li>
-              <a href="{{ url_for('final_page') }}">More Info</a>
+              <a href="{{ url_for('final_page') }}" class="orange-text text-darken-4">More Info</a>
             </li>
           </ul>
         </div>
         <!-- mobile navbar -->
         <ul class="sidenav #2e7d32 green darken-3" id="mobile-demo">
-          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('index') }}" class="orange-text text-darken-4">Home</a></li>
           <li>
-            <a href="{{ url_for('main_page') }}">Database</a>
+            <a href="{{ url_for('main_page') }}" class="orange-text text-darken-4">Database</a>
           </li>
           <li>
-            <a href="{{ url_for('final_page') }}"
+            <a href="{{ url_for('final_page') }}" class="orange-text text-darken-4"
               >More Info</a
             >
           </li>
@@ -64,7 +64,7 @@
       </nav>
     </header>
     
-   <a href="#top" id="return_top" class="btn-floating #2e7d32 green darken-3 btn-large" type="submit" name="return_top">
+   <a href="#top" id="return_top_btn" class="btn-floating #2e7d32 green darken-3 btn-large" type="submit" name="return_top">
       
       <i class="material-icons right">arrow_upward</i>
     </a>

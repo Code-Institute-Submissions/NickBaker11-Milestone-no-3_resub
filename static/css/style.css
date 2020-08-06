@@ -13,11 +13,17 @@
     right: 0%;
     left: 0%;
     z-index: -1;
-    height: 90%;
+    top: 0;
+    height: 100%;
 }
-h1, h2, h3{
-    text-align: center;
+#top{
     font-family: Indie Flower, 'sans-serf'
+}
+#index_text, #final_page_text{
+    width: 95%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 ul{
     list-style-type: none;
@@ -26,11 +32,13 @@ ul{
 li{
     display: inline;
 }
-#intro-text, #final-page-para{
+.general_text_rule{
     text-align: center;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
+    color: #2e7d32;
+    font-family: Indie Flower, 'sans-serf'
 }
 .content {
   padding: 0 18px;
@@ -38,18 +46,21 @@ li{
   overflow: hidden;
   background-color: #f1f1f1;
 }
-#add_info{
+#add_info_btn{
   top: 0;
   right: 0;
   position: fixed;
-  margin-top: 20rem;
+  margin-top: 30rem;
   margin-right: 1rem
 }
 
-#return_top{
+#return_top_btn{
     top: 0;
   right: 0;
   position: fixed;
-  margin-top: 25rem;
+  margin-top: 35rem;
   margin-right: 1rem
+}
+#edit_info_btn, #data{
+    margin-left: 1rem;
 }
