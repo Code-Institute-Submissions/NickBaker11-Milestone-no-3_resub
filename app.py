@@ -51,6 +51,11 @@ def add_info():
     return render_template('add_info.html', dinoInfo=mongo.db.dinoInfo.find())
 
 
+@app.route("/edit_info/<info_id>", methods=["GET", "POST"])
+def edit_info(info_id):
+    info = mongo.db.info.find_one({"_id": ObjectId(info_id)})
+    return render_template('edit_info.html', info=info)
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

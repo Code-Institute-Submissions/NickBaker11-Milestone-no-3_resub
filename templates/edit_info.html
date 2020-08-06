@@ -1,8 +1,8 @@
 {% extends 'base.html'%} {% block content %}
-<h2>Add what you have discovererd to the database</h2>
+<h2>Edit a database entry</h2>
 <!--name category-->
 <div class="row">
-  <form class="col s12" method="POST" action="">
+  <form class="col s12" method="POST" action="{{ url_for('edit_info', info_id=info._id) }}">
     <div class="row">
       <div class="input-field col s12 green-text text-darken-3">
         <label class="green-text text-darken-3" for="name">First Name:</label>
@@ -49,8 +49,8 @@
       </div>
     </div>
     <!--submit button-->
-    <button id="add_submit" class="btn #2e7d32 green darken-3 btn-large" type="submit" name="add_submit">
-      Submit
+    <button id="edit_submit" class="btn #2e7d32 green darken-3 btn-large" type="submit" name="edit_submit">
+      Edit
       <i class="material-icons right"></i>
     </button>
   </form>
