@@ -40,6 +40,9 @@ li{
     color: #2e7d32;
     font-family: Indie Flower, 'sans-serf'
 }
+#data{
+    font-size: 120%;
+}
 .content {
   padding: 0 18px;
   display: none;

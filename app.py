@@ -62,12 +62,12 @@ def update_info(info_id):
     info = mongo.db.dinoInfo
     info.update({'_id': ObjectId(info_id)},
     {
-        'name': request.form.get['name'],
-        'time_period': request.form.get['time_period'],
-        'diet': request.form.get['diet'],
-        'height': request.form.get['height'],
-        'speed': request.form.get['speed'],
-        'discovered_in': request.form.get['discovered_in'],
+        'name': request.form.get('name'),
+        'time_period': request.form.get('time_period'),
+        'diet': request.form.get('diet'),
+        'height': request.form.get('height'),
+        'speed': request.form.get('speed'),
+        'discovered_in': request.form.get('discovered_in'),
     })
     return redirect(url_for('main_page'))
 
