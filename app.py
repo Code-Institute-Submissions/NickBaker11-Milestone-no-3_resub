@@ -72,6 +72,12 @@ def update_info(info_id):
     return redirect(url_for('main_page'))
 
 
+@app.route('/delete_info/<info_id>')
+def delete_info(info_id):
+    mongo.db.dinoInfo.remove({'_id': ObjectId(info_id)})
+    return redirect(url_for('main_page'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

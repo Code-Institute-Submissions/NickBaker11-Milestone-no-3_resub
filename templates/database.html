@@ -25,6 +25,9 @@
       ><i class="material-icons">edit</i></a
     >
     <br>
+    <a href="{{ url_for('delete_info', info_id=info._id) }}" id="delete_info_btn" class="btn-floating btn-large #2e7d32 green darken-3"
+      ><i class="material-icons">delete</i></a
+    >
     {% endfor %}
     
 {% endblock %}

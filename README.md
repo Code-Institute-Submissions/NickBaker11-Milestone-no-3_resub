@@ -16,6 +16,8 @@ This project will be an educational database aimed at children and teenagers wit
 ##Testing
 * Testing my links- 'logo', 'home', 'database', 'more info', 'add', top_return' and 'edit' by clicking on them. All go to their correct url.
 * Testing my CRUD 'create'- Clicking on the #add_info_btn on main_page.html takes the user to add_info.html. This page shows the user the input catagories. THe user can then input the desired data into each - any category that does not have input (aside from the 'Time Period' currently which needs fixing) gets a 'please fill out this field' popup warning. Once the user has finished inputting their data and clicks 'Submit', the data is successfully sent to my mongo db. I have tested this several times and see the data both in my atlas mongo database and on the website itself as the user will see it.
+* Testing my CRUD 'edit'- Clicking on the #edit_info_btn on main_page.html that is linking to each database entry takes the user to the same page setup as add_info.hmtl, except that the fields are already filled in(aside from the 'Time Period' currently which needs fixing). The user may then edit the desired information and hit the Edit button. The user will then be redirected to main_page.html and the information they wanted to edit will have been successfully altered.
+* Testing my CRUD 'delete'- Clicking on the #delete_info_btn on main_page.html that is linking to each database entry will delete that particular entry from the database. As it is removed from the db, it will no longer be visible to the user.
 ##Deployment
 ##Credits
 ##Content

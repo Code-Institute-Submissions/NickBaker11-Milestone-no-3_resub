@@ -50,20 +50,24 @@ li{
   background-color: #f1f1f1;
 }
 #add_info_btn{
-  top: 0;
+  bottom: 0;
   right: 0;
   position: fixed;
-  margin-top: 30rem;
+  margin-bottom: 1rem;
   margin-right: 1rem
 }
 
 #return_top_btn{
-    top: 0;
+    bottom: 0;
   right: 0;
   position: fixed;
-  margin-top: 35rem;
+  margin-bottom: 5rem;
   margin-right: 1rem
 }
 #edit_info_btn, #data{
     margin-left: 1rem;
+}
+#delete_info_btn{
+    margin-left: 1rem;
+    margin: 1rem;
 }
