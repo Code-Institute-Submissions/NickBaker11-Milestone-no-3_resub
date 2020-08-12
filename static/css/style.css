@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Nunito&family=Open+Sans+Condensed:wght@700&family=Patrick+Hand&display=swap');
 
 .container{
     margin: 0;
@@ -17,7 +18,7 @@
     height: 100%;
 }
 #top{
-    font-family: Indie Flower, 'sans-serf'
+    font-family: Open Sans Condensed, 'sans-serf'
 }
 #index_text, #final_page_text{
     width: 95%;
@@ -37,8 +38,8 @@ li{
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
-    color: #2e7d32;
-    font-family: Indie Flower, 'sans-serf'
+    color: #d50000;
+    font-family: Open Sans Condensed, 'sans-serf'
 }
 #data{
     font-size: 120%;
@@ -53,7 +54,7 @@ li{
   bottom: 0;
   right: 0;
   position: fixed;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   margin-right: 1rem
 }
 
@@ -61,7 +62,7 @@ li{
     bottom: 0;
   right: 0;
   position: fixed;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   margin-right: 1rem
 }
 #edit_info_btn, #data{

@@ -1,12 +1,12 @@
 {% extends 'base.html'%} {% block content %}
-<h2>Add what you have discovererd to the database</h2>
+<h2 class="general_text_rule">Add what you have discovererd to the database</h2>
 <!--name category-->
 <div class="row">
   <form class="col s12" method="POST" action="">
     <div class="row">
-      <div class="input-field col s12 green-text text-darken-3">
-        <label class="green-text text-darken-3" for="name">First Name:</label>
-        <input id="name" name="name" type="text" class="validate" required />
+      <div class="input-field col s12 red-text text-accent-4">
+        <label class="red-text text-accent-4" for="name">First Name:</label>
+        <input id="name" name="name" type="text" class="validate" placeholder="T-Rex" required />
       </div>
     </div>
         <!--time period category-->
@@ -18,38 +18,38 @@
           <option value="Jurassic">Jurassic</option>
           <option value="Cretaceous">Cretaceous</option>
         </select>
-        <label class="green-text text-darken-3" for="time_period">Time Period:</label>
+        <label class="red-text text-accent-4" for="time_period">Time Period:</label>
       </div>
     </div>
     <!--diet category-->
     <div class="row">
       <div class="input-field col s12">
-        <label class="green-text text-darken-3" for="diet">Diet:</label>
-        <input id="diet" name="diet" type="text" class="validate" required />
+        <label class="red-text text-accent-4" for="diet">Diet:</label>
+        <input id="diet" name="diet" type="text" class="validate" placeholder="Carvnivore" required/>
       </div>
     </div>
     <!--speed category-->
     <div class="row">
       <div class="input-field col s12">
-        <label class="green-text text-darken-3" for="height">Height:</label>
-        <input id="height" name="height" type="text" class="validate" required />
+        <label class="red-text text-accent-4" for="height">Height:</label>
+        <input id="height" name="height" type="text" class="validate" placeholder="3 metres" required/>
       </div>
     </div>
     <div class="row">
       <div class="input-field col s12">
-        <label class="green-text text-darken-3" for="speed">Speed:</label>
-        <input id="speed" name="speed" type="text" class="validate" required />
+        <label class="red-text text-accent-4" for="speed">Speed:</label>
+        <input id="speed" name="speed" type="text" class="validate" placeholder="30 kph" required/>
       </div>
     </div>
     <!--discovererd in category-->
     <div class="row">
       <div class="input-field col s12">
-        <label class="green-text text-darken-3" for="discovered_in">Discovered In:</label>
-        <input id="discovered_in" name="discovered_in" type="text" class="validate" required />
+        <label class="red-text text-accent-4" for="discovered_in">Discovered In:</label>
+        <input id="discovered_in" name="discovered_in" type="text" class="validate" placeholder="South Dakota USA" required/>
       </div>
     </div>
     <!--submit button-->
-    <button id="add_submit" class="btn #2e7d32 green darken-3 btn-large" type="submit" name="add_submit">
+    <button id="add_submit" class="btn #d50000 red accent-4 btn-large" type="submit" name="add_submit">
       Submit
       <i class="material-icons right"></i>
     </button>
