@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body >
+  </head>
+  <body>
+    {% block content %} 
     
-
-{% block content %}
-
     {% for info in dinoInfo %}
-    <div id="data">
-    <br>
-        <strong>Name:{{info.name}}</strong><br>
-        Time Period:{{info.time_period}}<br>
-        Diet:{{info.diet}}<br>
-        Height:{{info.height}}<br>
-        Speed:{{info.speed}}<br>
-        Discovered in:{{info.discovered_in}}<br>
-        <br>
-        </div>
-        <a href="{{ url_for('edit_info', info_id=info._id) }}" id="edit_info_btn" class="btn-floating btn-large #d50000 red accent-4"
-      ><i class="material-icons">edit</i></a
-    >
-    <br>
-    <a href="{{ url_for('delete_info', info_id=info._id) }}" id="delete_info_btn" class="btn-floating btn-large #d50000 red accent-4"
-      ><i class="material-icons">delete</i></a
-    >
-    {% endfor %}
+    <div id="data" class="row">
+      <br />
+      <div id="data_info" class="col s4 offset-s4">
+        <strong>Name:</strong> {{info.name}}<br />
+        <strong>Time Period:</strong> {{info.time_period}}<br />
+        <strong>Diet:</strong> {{info.diet}}<br />
+        <strong>Height:</strong> {{info.height}}<br />
+        <strong>Speed:</strong> {{info.speed}}<br />
+        <strong>Discovered in:</strong> {{info.discovered_in}}<br />
+        <br />
+      </div>
+
+      <div id="data_btns" class="col s2">
+        <a
+          href="{{ url_for('edit_info', info_id=info._id) }}"
+          id="edit_info_btn"
+          class="btn-floating btn-large #d50000 red accent-4"
+          ><i class="material-icons">edit</i></a
+        >
+        <br />
+        <a
+          href="{{ url_for('delete_info', info_id=info._id) }}"
+          id="delete_info_btn"
+          class="btn-floating btn-large #d50000 red accent-4"
+          ><i class="material-icons">delete</i></a
+        >
+      </div>
+    </div>
+    {% endfor %} 
     
-{% endblock %}
-</body>
+    {% endblock %}
+  </body>
 </html>

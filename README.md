@@ -10,7 +10,8 @@ This project will be an educational database aimed at children and teenagers wit
 * ~~I will likely use Bootstrap to assist with my page layout- https://getbootstrap.com/~~ 
 * I will likely use hvr.css to add hover effects to elements on my page-https://ianlunn.github.io/Hover/
 * I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
-* I am using Materialize for layout and navbar- I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
+* I am using Materialize for layout and navbar- 
+* I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
 
 
 ##Testing
@@ -20,9 +21,9 @@ This project will be an educational database aimed at children and teenagers wit
 * Testing my CRUD 'delete'- Clicking on the #delete_info_btn on main_page.html that is linking to each database entry will delete that particular entry from the database. As it is removed from the db, it will no longer be visible to the user.
 ##Deployment
 ##Credits
-##Content
-* <header>Is from materialize</header>
-##Media
-* logo image taken from https://www.netclipart.com/isee/iwoToh_jurassic-park-t-rex-skull/
+###Content
+* Is utilised videos from the Code Institure course to helpw write my code, especially in app.py
+* I used Materialize for my navbar, buttons and general structure. Code in main.js is pulled from Materialize.
+###Media
 * background_img taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg
-##Acknowledgements
+###Acknowledgements

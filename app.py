@@ -20,7 +20,8 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', dinoInfo=mongo.db.dinoInfo.find())
+    info = mongo.db.dinoInfo.find_one({"name": "Tyrannosaurus Rex"})
+    return render_template('index.html', info=info)
 
 
 @app.route('/main_page')

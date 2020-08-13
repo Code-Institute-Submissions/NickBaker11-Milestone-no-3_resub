@@ -8,7 +8,7 @@
 .background_img{
     display: block;
     position: fixed;
-    opacity: 0.5;
+    opacity: 0.3;
     margin-right: auto;
     margin-left: auto;
     right: 0%;
@@ -16,6 +16,12 @@
     z-index: -1;
     top: 0;
     height: 100%;
+}
+hr{
+border: solid 0.05rem black
+}
+#first_para{
+    color: black;
 }
 #top{
     font-family: Open Sans Condensed, 'sans-serf'
@@ -43,6 +49,15 @@ li{
 }
 #data{
     font-size: 120%;
+    text-align: center;
+    border: solid 3px #d50000;
+    margin: 3rem 6rem;
+}
+#data_info{
+    padding: 1rem;
+}
+#data_btns{
+    text-align: center;
 }
 .content {
   padding: 0 18px;
@@ -65,10 +80,6 @@ li{
   margin-bottom: 1rem;
   margin-right: 1rem
 }
-#edit_info_btn, #data{
-    margin-left: 1rem;
-}
-#delete_info_btn{
-    margin-left: 1rem;
-    margin: 1rem;
+#edit_info_btn, #delete_info_btn{
+   margin: 1rem;
 }

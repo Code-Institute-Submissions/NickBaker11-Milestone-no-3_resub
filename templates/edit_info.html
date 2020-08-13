@@ -1,5 +1,5 @@
 {% extends 'base.html'%} {% block content %}
-<h2>Edit a database entry</h2>
+<h2 class="general_text_rule">Edit a database entry</h2>
 <!--name category-->
 <div class="row">
   <form class="col s12" method="POST" action="{{ url_for('update_info', info_id=info._id) }}">
@@ -13,10 +13,10 @@
     <div class="row">
       <div class="input-field col s12">
         <select id="time_period" name="time_period">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="Triassic">Triassic</option>
-          <option value="Jurassic">Jurassic</option>
-          <option value="Cretaceous">Cretaceous</option>
+          <option value="" disabled >Choose your option</option>
+          {% for time_period in info%}
+            <option value="{{ info.time_period }}" selected>{{ info.time_period }}</option>
+          {% endfor %}
         </select>
         <label class="red-text text-accent-4" for="time_period">Time Period:</label>
       </div>

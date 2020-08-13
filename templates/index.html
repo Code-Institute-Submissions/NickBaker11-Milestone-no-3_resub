@@ -1,20 +1,36 @@
 {% extends 'base.html' %}
+
 {% block content%}
-<div class="general_text_rule">
- <h3>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h3>
-    <p class="general_text_rule">
-     Dinosaurs have been gone from our planet for roughly 65 million years, yet people are still fascinated by them. This page will allow you to scour the internet for information on these long vanished lizards (Dinosaur means terrible-lizard) and store some of that information on our database so that you can look back at it whenever you like. There are 6 categories for you to fill out- Name, Time Period, Diet, Height, Speed and Discovered in. To help you, we will explain each category a little.<br>
-     <br>
-     Name- The given name of each dinosaur such as Tyrannosaurus Rex<br>
-     Time Period- Dinosaurs lived in what we call the Mesozoic Era, which is split into three different time periods- Triassic, Jurassic and Cretaceous. You will be able to pick one of these three options for this category.<br>
-     Diet- There are three types of dinosaur diet: Herbivore (vegetarian), Carnivore (meat eater) and Omnivore (eats both meat and vegetation)<br>
-     Height- Some dinosaurs were very small and others were very, very big. Most information you find on height will be an average, but if you find a record height, you can pu that if you want<br>
-     Speed- As dinosaurs aren't alive anymore, we can't measure their speed on a racetrack. However, scientists have used amazing technology to get what they believe to be quite accurate guesses on how fast a dinosaur could of ran<br>
-     Discovered in- This category is for the place that dinosaur skeletons have been found. Sound dinosaurs will have been found in a few different spots. You can be as specific as you like with this category, putting a continent like North America, a US state such as Arizona where lots of dinosaurs bones have been found or even a town like Faith where the Tyrannosaurus Rex skeleton 'Sue' was discovered<br>
-     <br>
-    There is so much information on dinosaurs out there. You can find it in books at your library, by talking to people or by searching online. If you are going to use the internet, you could type something specific like 'herbivorous dinosaur from the Jurassic period' or 'carnivorous dinosaur from the Triassic period'. This will narrow done your search a bit and might help you find out about dinosaurs you may not have discovered otherwise.<br>
-    <br>
-    Good luck in your hunt for Dino Info, we hope you enjoy it!
-    </p>
-</div>
-    {% endblock %}
+    <div class="general_text_rule">
+    <h2>Welcome to your Dinosaur Database</h2>
+        <p id="first_para">
+        If you want to learn about dinosaurs and store what you've learnt, you're in the right place! This page will allow you to scour the internet for information on these long vanished lizards (Dinosaur means terrible-lizard) and store some of that information on our database so that you can look back at it whenever you like. Each Dinosaur will have a database entry like the one below.<br>
+        </p>
+          <!-- database example -->
+        <strong>Name:</strong> {{info.name}}<br />
+        <strong>Time Period:</strong> {{info.time_period}}<br />
+        <strong>Diet:</strong> {{info.diet}}<br />
+        <strong>Height:</strong> {{info.height}}<br />
+        <strong>Speed:</strong> {{info.speed}}<br />
+        <strong>Discovered in:</strong> {{info.discovered_in}}<br />
+        <a href="{{ url_for('main_page') }}" class=" #000000 black #d50000 red-text text-accent-4 btn"><i class="arrow_forward">Go to Database</i></a><br>
+        <hr>
+        <h5>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h5>
+        <hr>
+        <p >
+        <br>
+        There are 6 categories for you to fill out- Name, Time Period, Diet, Height, Speed and Discovered in. To help you, we will explain each category a little.
+        Name- The given name of each dinosaur such as Tyrannosaurus Rex<br>
+        Time Period- Dinosaurs lived in what we call the Mesozoic Era, which is split into three different time periods- Triassic, Jurassic and Cretaceous. You will be able to pick one of these three options for this category.<br>
+        Diet- There are three types of dinosaur diet: Herbivore (vegetarian), Carnivore (meat eater) and Omnivore (eats both meat and vegetation)<br>
+        Height- Some dinosaurs were very small and others were very, very big. Most information you find on height will be an average, but if you find a record height, you can put that in if you want<br>
+        Speed- As dinosaurs aren't alive anymore, we can't measure their speed on a racetrack. However, scientists have used amazing technology to get what they believe to be quite accurate guesses on how fast a dinosaur could of ran<br>
+        Discovered in- This category is for the place that dinosaur skeletons have been found. Sound dinosaurs will have been found in a few different spots. You can be as specific as you like with this category, putting a continent like North America, a US state such as Arizona where lots of dinosaurs bones have been found or even a town like Faith where the Tyrannosaurus Rex skeleton 'Sue' was discovered<br>
+        <br>
+      
+        <br>There is so much information on dinosaurs out there. You can find it in books at your library, by talking to people or by searching online. If you are going to use the internet, you could type something specific like 'herbivorous dinosaur from the Jurassic period' or 'carnivorous dinosaur from the Triassic period'. This will narrow done your search a bit and might help you find out about dinosaurs you may not have discovered otherwise.<br>
+        <br>
+        Good luck in your hunt for Dino Info, we hope you enjoy it!
+        </p>
+    </div>
+{% endblock %}
