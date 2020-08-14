@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
   </head>
   <body>
@@ -10,15 +10,15 @@
     
     {% for info in dinoInfo %}
     <div id="data" class="row">
-      <br />
+      <br>
       <div id="data_info" class="col s4 offset-s4">
-        <strong>Name:</strong> {{info.name}}<br />
-        <strong>Time Period:</strong> {{info.time_period}}<br />
-        <strong>Diet:</strong> {{info.diet}}<br />
-        <strong>Height:</strong> {{info.height}}<br />
-        <strong>Speed:</strong> {{info.speed}}<br />
-        <strong>Discovered in:</strong> {{info.discovered_in}}<br />
-        <br />
+        <strong>Name:</strong> {{info.name}}<br>
+        <strong>Time Period:</strong> {{info.time_period}}<br>
+        <strong>Diet:</strong> {{info.diet}}<br>
+        <strong>Height:</strong> {{info.height}}<br>
+        <strong>Speed:</strong> {{info.speed}}<br>
+        <strong>Discovered in:</strong> {{info.discovered_in}}<br>
+        <br>
       </div>
 
       <div id="data_btns" class="col s2">
@@ -28,7 +28,7 @@
           class="btn-floating btn-large #d50000 red accent-4"
           ><i class="material-icons">edit</i></a
         >
-        <br />
+        <br>
         <a
           href="{{ url_for('delete_info', info_id=info._id) }}"
           id="delete_info_btn"

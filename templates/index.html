@@ -2,18 +2,21 @@
 
 {% block content%}
     <div class="general_text_rule">
-    <h2>Welcome to your Dinosaur Database</h2>
+    <h2>Welcome to your Dinosaur Database!</h2>
         <p id="first_para">
         If you want to learn about dinosaurs and store what you've learnt, you're in the right place! This page will allow you to scour the internet for information on these long vanished lizards (Dinosaur means terrible-lizard) and store some of that information on our database so that you can look back at it whenever you like. Each Dinosaur will have a database entry like the one below.<br>
         </p>
           <!-- database example -->
-        <strong>Name:</strong> {{info.name}}<br />
-        <strong>Time Period:</strong> {{info.time_period}}<br />
-        <strong>Diet:</strong> {{info.diet}}<br />
-        <strong>Height:</strong> {{info.height}}<br />
-        <strong>Speed:</strong> {{info.speed}}<br />
-        <strong>Discovered in:</strong> {{info.discovered_in}}<br />
+        <strong>Name:</strong> {{info.name}}<br>
+        <strong>Time Period:</strong> {{info.time_period}}<br>
+        <strong>Diet:</strong> {{info.diet}}<br>
+        <strong>Height:</strong> {{info.height}}<br>
+        <strong>Speed:</strong> {{info.speed}}<br>
+        <strong>Discovered in:</strong> {{info.discovered_in}}<br>
+        <br>
+        <p>We have already made some entries to the database for you. Click below to go to the databse and familiarlise yourself before you begin your research.</p>
         <a href="{{ url_for('main_page') }}" class=" #000000 black #d50000 red-text text-accent-4 btn"><i class="arrow_forward">Go to Database</i></a><br>
+        <br>
         <hr>
         <h5>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h5>
         <hr>
