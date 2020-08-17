@@ -19,10 +19,10 @@
 hr{
 border: solid 0.05rem black;
 }
-#first_para{
+#db_example{
     color: black;
 }
-#top{
+#top, .navbtn{
     font-family: Pangolin, 'sans-serf';
 }
 #index_text, #final_page_text{
@@ -73,7 +73,6 @@ li{
   margin-right: 1rem;
   z-index: 1;
 }
-
 #return_top_btn{
     bottom: 0;
   right: 0;
@@ -86,7 +85,23 @@ li{
    margin: 1rem;
    z-index: 1;
 }
-::placeholder, input, form,{
+::placeholder, input, form{
     font-family: Pangolin, sans-serif;
-    color:#ff8a80;
+    color: #ff8a80;
+    
+}
+.dropdown-content li>span{
+    color: #ff8a80;
+}
+:hover.navbtn{
+    background-color: #ff8a80;
+}
+#edit_submit{
+    font-family: Pangolin, sans-serif;
+}
+.cat-names{
+    font-weight: 700;
+}
+a:hover {
+    color: red;
 }

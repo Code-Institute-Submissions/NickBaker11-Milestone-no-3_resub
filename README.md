@@ -6,6 +6,7 @@ This project will be an educational database aimed at children and teenagers wit
 * As a user I want to have an organised place to store what I am learning so that I can look at it again.
 * As a user want to be able to update and delete the information I am inputting if there is new information to add to what I already have.
 
+* 
 ## Technologies Used 
 * I will likely use hvr.css to add hover effects to elements on my page-https://ianlunn.github.io/Hover/
 * I used W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 

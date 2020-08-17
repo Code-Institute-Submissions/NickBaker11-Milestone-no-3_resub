@@ -12,13 +12,13 @@
     <div id="data" class="row">
       <br>
       <div id="data_info" class="col s4 offset-s4">
-        <strong>Name:</strong> {{info.name}}<br>
-        <strong>Time Period:</strong> {{info.time_period}}<br>
-        <strong>Diet:</strong> {{info.diet}}<br>
-        <strong>Height:</strong> {{info.height}}<br>
-        <strong>Speed:</strong> {{info.speed}}<br>
-        <strong>Discovered in:</strong> {{info.discovered_in}}<br>
-        <strong>Extra Information:</strong> {{info.extra_information}}<br>
+        <span class="cat-names">Name:</span> {{info.name}}<br>
+        <span class="cat-names">Time Period:</span> {{info.time_period}}<br>
+        <span class="cat-names">Diet:</span> {{info.diet}}<br>
+        <span class="cat-names">Height:</span> {{info.height}}<br>
+        <span class="cat-names">Speed:</span> {{info.speed}}<br>
+        <span class="cat-names">Discovered in:</span> {{info.discovered_in}}<br>
+        <span class="cat-names">Extra Information:</span> {{info.extra_information}}<br>
         <br>
       </div>
 
@@ -26,14 +26,14 @@
         <a
           href="{{ url_for('edit_info', info_id=info._id) }}"
           id="edit_info_btn"
-          class="btn-floating btn-large #d50000 red accent-4"
+          class="btn-floating btn-large #d50000 red accent-4 hoverable"
           ><i class="material-icons">edit</i></a
         >
         <br>
         <a
           href="{{ url_for('delete_info', info_id=info._id) }}"
           id="delete_info_btn"
-          class="btn-floating btn-large #d50000 red accent-4"
+          class="btn-floating btn-large #d50000 red accent-4 hoverable"
           ><i class="material-icons">delete</i></a
         >
       </div>

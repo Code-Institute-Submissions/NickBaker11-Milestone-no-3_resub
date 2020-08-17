@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <title>The Dino Database</title>
   </head>
 
@@ -35,24 +36,24 @@
           >
           <ul class="hide-on-med-and-down right ">
             <li>
-              <a href="{{ url_for('index') }}" class="red-text text-accent-4">Home</a>
+              <a href="{{ url_for('index') }}" class="red-text text-accent-4 navbtn">Home</a>
             </li>
             <li>
-              <a href="{{ url_for('main_page') }}" class="red-text text-accent-4">Database</a>
+              <a href="{{ url_for('main_page') }}" class="red-text text-accent-4 navbtn">Database</a>
             </li>
             <li>
-              <a href="{{ url_for('final_page') }}" class="red-text text-accent-4">More Info</a>
+              <a href="{{ url_for('final_page') }}" class="red-text text-accent-4 navbtn">More Info</a>
             </li>
           </ul>
         </div>
         <!-- mobile navbar -->
         <ul class="sidenav #212121 grey darken-4" id="mobile-demo">
-          <li><a href="{{ url_for('index') }}" class="red-text text-accent-4">Home</a></li>
+          <li><a href="{{ url_for('index') }}" class="red-text text-accent-4 navbtn">Home</a></li>
           <li>
-            <a href="{{ url_for('main_page') }}" class="red-text text-accent-4">Database</a>
+            <a href="{{ url_for('main_page') }}" class="red-text text-accent-4 navbtn">Database</a>
           </li>
           <li>
-            <a href="{{ url_for('final_page') }}" class="red-text text-accent-4"
+            <a href="{{ url_for('final_page') }}" class="red-text text-accent-4 navbtn"
               >More Info</a
             >
           </li>
@@ -60,7 +61,7 @@
       </nav>
     </header>
     
-   <a href="#top" id="return_top_btn" class="btn-floating #2e7d32 #d50000 red accent-4 btn-large" type="submit" name="return_top">
+   <a href="#top" id="return_top_btn" class="btn-floating #2e7d32 #d50000 red accent-4 btn-large hoverable" type="submit" name="return_top">
       
       <i class="material-icons right">arrow_upward</i>
     </a>
