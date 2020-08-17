@@ -44,7 +44,8 @@ def add_info():
             "diet": request.form.get("diet"),
             "height": request.form.get("height"),
             "speed": request.form.get("speed"),
-            "discovered_in": request.form.get("discovered_in")
+            "discovered_in": request.form.get("discovered_in"),
+            "extra_information": request.form.get("extra_information")
         }
         mongo.db.dinoInfo.insert_one(info)
         return redirect(url_for("main_page"))
@@ -69,6 +70,7 @@ def update_info(info_id):
         'height': request.form.get('height'),
         'speed': request.form.get('speed'),
         'discovered_in': request.form.get('discovered_in'),
+        'extra_information': request.form.get('extra_information')
     })
     return redirect(url_for('main_page'))
 

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 .container{
     margin: 0;
     padding: 0;
@@ -17,13 +17,13 @@
     height: 100%;
 }
 hr{
-border: solid 0.05rem black
+border: solid 0.05rem black;
 }
 #first_para{
     color: black;
 }
 #top{
-    font-family: Open Sans Condensed, 'sans-serf'
+    font-family: Pangolin, 'sans-serf';
 }
 #index_text, #final_page_text{
     width: 95%;
@@ -44,13 +44,14 @@ li{
     margin-left: auto;
     margin-right: auto;
     color: #d50000;
-    font-family: Open Sans Condensed, 'sans-serf'
+    font-family: Pangolin, 'sans-serf';
 }
 #data{
     font-size: 120%;
     text-align: center;
     border: solid 3px #d50000;
     margin: 3rem 6rem;
+    font-family: Pangolin, 'sans-serf';
 }
 #data_info{
     padding: 1rem;
@@ -69,7 +70,8 @@ li{
   right: 0;
   position: fixed;
   margin-bottom: 5rem;
-  margin-right: 1rem
+  margin-right: 1rem;
+  z-index: 1;
 }
 
 #return_top_btn{
@@ -77,8 +79,14 @@ li{
   right: 0;
   position: fixed;
   margin-bottom: 1rem;
-  margin-right: 1rem
+  margin-right: 1rem;
+  z-index: 1;
 }
 #edit_info_btn, #delete_info_btn{
    margin: 1rem;
+   z-index: 1;
+}
+::placeholder, input, form,{
+    font-family: Pangolin, sans-serif;
+    color:#ff8a80;
 }

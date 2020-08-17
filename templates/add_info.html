@@ -12,9 +12,9 @@
         <!--time period category-->
     <div class="row">
       <div class="input-field col s12">
-        <select id="time_period" name="time_period">
-          <option value="" disabled selected>Choose your option</option>
-          <option value="Triassic">Triassic</option>
+        <select id="time_period" class="red-text text-accent-4" name="time_period">
+          <option class="red-text text-accent-4" value="" disabled selected>Choose your option</option>
+          <option  value="Triassic">Triassic</option>
           <option value="Jurassic">Jurassic</option>
           <option value="Cretaceous">Cretaceous</option>
         </select>
@@ -48,6 +48,13 @@
         <input id="discovered_in" name="discovered_in" type="text" class="validate" placeholder="South Dakota USA" required/>
       </div>
     </div>
+    <!--extra information in category-->
+      <div class="row">
+        <div class="input-field col s12">
+          <label class="red-text text-accent-4" for="extra_information">Extra Information:</label>
+          <input id="extra_information" name="extra_information" type="text" class="materialize-textarea validate" placeholder="Anything else you find interesting about this terrible lizard">        
+        </div>
+      </div>
     <!--submit button-->
     <button id="add_submit" class="btn #d50000 red accent-4 btn-large" type="submit" name="add_submit">
       Submit

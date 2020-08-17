@@ -12,6 +12,7 @@ This project will be an educational database aimed at children and teenagers wit
 * I am using Materialize for layout and navbar- https://materializecss.com/
 * I will likely use W3C to validate my HTML and CSS- https://jigsaw.w3.org/css-validator/ 
 * I am using Heroku to deploy my project
+* I am using MongoDb Atlas to store my database
 
 ## Testing
 * Testing my links- In the navbar, both regular and mobile:'logo', 'home', 'database', 'more info'. ON all three pages: 'top_return' On index.html:  an additional 'database button that links to main_page.html. ON main_page.html: 'add', and 'edit'.  When clicked, each of these buttons sends the user to the correct URL.
@@ -29,6 +30,7 @@ This project will be an educational database aimed at children and teenagers wit
 ### Content
 * Is utilised videos from the Code Institute course to help write my code, especially in app.py
 * I used Materialize for my navbar, buttons and general structure. Code in main.js is pulled from Materialize.
+* Fact Retriever was used to source some facts- https://www.factretriever.com/dinosaur-facts#:~:text=Some%20dinosaurs'%20tails%20were%20over,keep%20their%20balance%20when%20running.&text=Dinosaurs%20were%20reptiles%20that%20lived,about%2065%20million%20years%20ago.&text=The%20earliest%20named%20dinosaur%20found,(%E2%80%9Cdawn%20stealer%E2%80%9D).
 ### Media
 * background_img taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg
 ### Acknowledgements
