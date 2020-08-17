@@ -88,13 +88,12 @@ li{
 ::placeholder, input, form{
     font-family: Pangolin, sans-serif;
     color: #ff8a80;
-    
 }
 .dropdown-content li>span{
     color: #ff8a80;
 }
-:hover.navbtn{
-    background-color: #ff8a80;
+.navbtn:hover{
+    filter: invert(100%);
 }
 #edit_submit{
     font-family: Pangolin, sans-serif;
@@ -104,4 +103,11 @@ li{
 }
 a:hover {
     color: red;
+}
+#filters{
+    text-align: center;
+}
+#filters_header{
+    background-color: #d50000;
+    text-align: center;
 }

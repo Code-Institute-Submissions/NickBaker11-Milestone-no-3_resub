@@ -1,10 +1,65 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 
-    <h2 class="general_text_rule">Your Dinosaur Database</h2>
-    {% include "database.html" %}
-    <br>
-        <a id="add_info_btn" href="{{ url_for('add_info') }}"
-        class="btn-floating btn-large #000000 black hoverable"
-         ><i class="material-icons">add</i></a>
+<h2 class="general_text_rule">Your Dinosaur Database</h2>
+<ul id="filters" class="collapsible">
+  <li>
+    <div id="filters_header" class="collapsible-header">Filters</div>
+    <div class="collapsible-body">
+      <form action="#">
+        <div class="row">
+          <div id="time_filter" class="col s6">
+            <h5>Show me Dinosaurs from the...</h5>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="cretacious_cb">Cretacious Time Period</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="jurassic_cb">Jurassic Time Period</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="triassic_cb">Triassic Time Period</span>
+              </label>
+            </p>
+          </div>
+          <div id="diet_filter" class="col s6">
+            <h5>Show me Dinosaurs who are...</h5>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="herbivores_cb">Herbivores</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="carnivores_cb">Carnivores</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span id="omnivores_cb">Omnivores</span>
+              </label>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </li>
+</ul>
+{% include "database.html" %}
+<br />
+<a
+  id="add_info_btn"
+  href="{{ url_for('add_info') }}"
+  class="btn-floating btn-large #000000 black hoverable"
+  ><i class="material-icons">add</i></a
+>
 {% endblock %}
