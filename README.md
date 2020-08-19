@@ -33,5 +33,7 @@ This project will be an educational database aimed at children and teenagers wit
 * I used Materialize for my navbar, buttons and general structure. Code in main.js is pulled from Materialize.
 * Fact Retriever was used to source some facts- https://www.factretriever.com/dinosaur-facts#:~:text=Some%20dinosaurs'%20tails%20were%20over,keep%20their%20balance%20when%20running.&text=Dinosaurs%20were%20reptiles%20that%20lived,about%2065%20million%20years%20ago.&text=The%20earliest%20named%20dinosaur%20found,(%E2%80%9Cdawn%20stealer%E2%80%9D).
 ### Media
-* background_img taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg
+* Skeleton2.jpg taken from https://blog.scienceborealis.ca/wp-content/uploads/sites/2/2019/11/TMP95.110.01_Skeleton2.jpg
+* trex.jp taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rd.com%2Flist%2Fbest-dinosaur-museums%2F&psig=AOvVaw2uj_VPEDJ9lZNOWhePYKuW&ust=1597926422141000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjUxfqhp-sCFQAAAAAdAAAAABAD
+* steg.jpeg and titanosaruas.jpg taken from https://www.rd.com/list/best-dinosaur-museums/
 ### Acknowledgements

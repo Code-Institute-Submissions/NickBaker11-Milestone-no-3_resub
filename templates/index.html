@@ -1,43 +1,127 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content%}
+<div class="general_text_rule">
+  <h2>Welcome to your Dinosaur Database!</h2>
 
-{% block content%}
-    <div class="general_text_rule">
-    <h2>Welcome to your Dinosaur Database!</h2>
-       
-        If you want to learn about dinosaurs and store what you've learnt, you're in the right place! This page will allow you to scour the internet for information on these long vanished lizards (Dinosaur means terrible-lizard) and store some of that information on our database so that you can look back at it whenever you like. Each Dinosaur will have a database entry like the one below.<br>
-        <br>
-         <span id="db_example">
-          <!-- database example -->
-        <span class="cat-names">Name:</span>  {{info.name}}<br>
-        <span class="cat-names">Time Period:</span>  {{info.time_period}}<br>
-        <span class="cat-names">Diet:</span>  {{info.diet}}<br>
-        <span class="cat-names">Height:</span>  {{info.height}}<br>
-        <span class="cat-names">Speed:</span>  {{info.speed}}<br>
-        <span class="cat-names">Discovered in:</span>  {{info.discovered_in}}<br>
-        <span class="cat-names">Extra Information:</span>  {{info.extra_information}}<br>
-        <br>
-         </span>
-        <p>We have already made some entries to the database for you. Click below to go to the databse and familiarlise yourself before you begin your research. Further down there is more helpful tips about what to put in each of the available categories.</p>
-        <a href="{{ url_for('main_page') }}" class=" #000000 black #d50000 red-text text-accent-4 btn hoverable"><i class="arrow_forward">Go to Database</i></a><br>
-        <br>
-        <hr>
-        <h5>"Dinosaurs may be extinct from the face of the planet, but they are alive and well in our imaginations."- Steve Miller</h5>
-        <hr>
-        <p >
-        <br>
-        There are 6 categories for you to fill out- Name, Time Period, Diet, Height, Speed and Discovered in. To help you, we will explain each category a little.
-        <span>Name-</span>  The given name of each dinosaur such as Tyrannosaurus Rex<br>
-        <span class="cat-names">Time Period-</span>  Dinosaurs lived in what we call the Mesozoic Era, which is split into three different time periods- Triassic, Jurassic and Cretaceous. You will be able to pick one of these three options for this category.<br>
-        <span class="cat-names">Diet-</span>  There are three types of dinosaur diet: Herbivore (vegetarian), Carnivore (meat eater) and Omnivore (eats both meat and vegetation)<br>
-        <span class="cat-names">Height-</span>  Some dinosaurs were very small and others were very, very big. Most information you find on height will be an average, but if you find a record height, you can put that in if you want<br>
-        <span class="cat-names">Speed-</span>  As dinosaurs aren't alive anymore, we can't measure their speed on a racetrack. However, scientists have used amazing technology to get what they believe to be quite accurate guesses on how fast a dinosaur could of ran<br>
-        <span class="cat-names">Discovered in-</span>  This category is for the place that dinosaur skeletons have been found. Sound dinosaurs will have been found in a few different spots. You can be as specific as you like with this category, putting a continent like North America, a US state such as Arizona where lots of dinosaurs bones have been found or even a town like Faith where the Tyrannosaurus Rex skeleton 'Sue' was discovered<br>
-        <span class="cat-names">Extra Information-</span>  This category can be used for any additional information you find interesting that doesn't fit into the above categories. This could be anything from "Velociraptor means 'speedy theif'" to "The Stegosaurus has the smallest brain for its body size of any known dinosaur. Its body was the size of a van, but its brain was the size of a walnut". It's up to you!
-        <br>
-      
-        <br>There is so much information on dinosaurs out there. You can find it in books at your library, by talking to people or by searching online. If you are going to use the internet, you could type something specific like 'herbivorous dinosaur from the Jurassic period' or 'carnivorous dinosaur from the Triassic period'. This will narrow done your search a bit and might help you find out about dinosaurs you may not have discovered otherwise.<br>
-        <br>
-        Good luck in your hunt for Dino Info, we hope you enjoy it!
-        </p>
-    </div>
+  If you want to learn about dinosaurs and store what you've learnt, you're in
+  the right place! This page will allow you to scour the internet for
+  information on these long vanished lizards (Dinosaur means terrible-lizard)
+  and store some of that information on our database so that you can look back
+  at it whenever you like. Each Dinosaur will have a database entry like the one
+  below.<br />
+  <br />
+  <span id="db_example">
+    <!-- database example -->
+    <span class="cat-names">Name:</span> {{info.name}}<br />
+    <span class="cat-names">Time Period:</span> {{info.time_period}}<br />
+    <span class="cat-names">Diet:</span> {{info.diet}}<br />
+    <span class="cat-names">Height:</span> {{info.height}}<br />
+    <span class="cat-names">Speed:</span> {{info.speed}}<br />
+    <span class="cat-names">Discovered in:</span> {{info.discovered_in}}<br />
+    <span class="cat-names">Extra Information:</span>
+    {{info.extra_information}}<br />
+    <br />
+  </span>
+  <p>
+    We have already made some entries to the database for you. Click below to go
+    to the databse and familiarlise yourself before you begin your research.
+    Further down there is more helpful tips about what to put in each of the
+    available categories.
+  </p>
+  <a
+    href="{{ url_for('main_page') }}"
+    class="#000000 black #d50000 red-text text-accent-4 btn hoverable"
+    ><i class="arrow_forward">Go to Database</i></a
+  ><br />
+  <br />
+  <hr />
+  <h5>
+    "Dinosaurs may be extinct from the face of the planet, but they are alive
+    and well in our imaginations."- Steve Miller
+  </h5>
+  <hr />
+  <p>
+    <br />
+    There are 6 categories for you to fill out- Name, Time Period, Diet, Height,
+    Speed and Discovered in. To help you, we will explain each category a
+    little.
+    <span>Name-</span> The given name of each dinosaur such as Tyrannosaurus
+    Rex<br />
+    <span class="cat-names">Time Period-</span> Dinosaurs lived in what we call
+    the Mesozoic Era, which is split into three different time periods-
+    Triassic, Jurassic and Cretaceous. You will be able to pick one of these
+    three options for this category.<br />
+    <span class="cat-names">Diet-</span> There are three types of dinosaur diet:
+    Herbivore (vegetarian), Carnivore (meat eater) and Omnivore (eats both meat
+    and vegetation)<br />
+    <span class="cat-names">Height-</span> Some dinosaurs were very small and
+    others were very, very big. Most information you find on height will be an
+    average, but if you find a record height, you can put that in if you want<br />
+    <span class="cat-names">Speed-</span> As dinosaurs aren't alive anymore, we
+    can't measure their speed on a racetrack. However, scientists have used
+    amazing technology to get what they believe to be quite accurate guesses on
+    how fast a dinosaur could of ran<br />
+    <span class="cat-names">Discovered in-</span> This category is for the place
+    that dinosaur skeletons have been found. Sound dinosaurs will have been
+    found in a few different spots. You can be as specific as you like with this
+    category, putting a continent like North America, a US state such as Arizona
+    where lots of dinosaurs bones have been found or even a town like Faith
+    where the Tyrannosaurus Rex skeleton 'Sue' was discovered<br />
+    <span class="cat-names">Extra Information-</span> This category can be used
+    for any additional information you find interesting that doesn't fit into
+    the above categories. This could be anything from "Velociraptor means
+    'speedy theif'" to "The Stegosaurus has the smallest brain for its body size
+    of any known dinosaur. Its body was the size of a van, but its brain was the
+    size of a walnut". It's up to you!
+    <br />
+
+    <br />There is so much information on dinosaurs out there. You can find it
+    in books at your library, by talking to people or by searching online. If
+    you are going to use the internet, you could type something specific like
+    'herbivorous dinosaur from the Jurassic period' or 'carnivorous dinosaur
+    from the Triassic period'. This will narrow done your search a bit and might
+    help you find out about dinosaurs you may not have discovered otherwise.<br />
+    <br />
+    Good luck in your hunt for Dino Info, we hope you enjoy it!
+  </p>
+</div>
+<div class="slider">
+  <ul class="slides">
+    <li>
+      <img
+        class="img_slides"
+        src="{{ url_for('static', filename='images/steg.jpg') }}"
+      />
+      <div class="caption center-align">
+        <h3>A Stegosaurus skeleton</h3>
+        <h5 class="light grey-text text-lighten-3">
+          Natural History Museum, London
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img
+        class="img_slides"
+        src="{{ url_for('static', filename='images/trex.jpg') }}"
+      />
+      <div class="caption left-align light red-text text-accent-4">
+        <h3>A Tyrannosaurus Rex skeleton</h3>
+        <h5>
+          The Field Museum, Chicago, Illinois
+        </h5>
+      </div>
+    </li>
+    <li>
+      <img
+        class="img_slides"
+        src="{{ url_for('static', filename='images/titanosaur.jpg') }}"
+      />
+      <div class="caption right-align light black-text">
+        <h3>A Titanosaurus skeleton</h3>
+        <h5 class="light black-text">
+          The Field Museum, Chicago, Illinois
+        </h5>
+      </div>
+    </li>
+  </ul>
+</div>
 {% endblock %}

@@ -11,7 +11,7 @@
     {% for info in dinoInfo %}
     <div id="data" class="row">
       <br>
-      <div id="data_info" class="col s4 offset-s4">
+      <div id="data_info" class="col s12 m4 offset-m4">
         <span class="cat-names">Name:</span> {{info.name}}<br>
         <span class="cat-names">Time Period:</span> {{info.time_period}}<br>
         <span class="cat-names">Diet:</span> {{info.diet}}<br>
@@ -22,7 +22,7 @@
         <br>
       </div>
 
-      <div id="data_btns" class="col s2">
+      <div id="data_btns" class="col s12 m2">
         <a
           href="{{ url_for('edit_info', info_id=info._id) }}"
           id="edit_info_btn"
