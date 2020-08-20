@@ -107,6 +107,9 @@ a:hover {
     background-color: #d50000;
     text-align: center;
 }
+.filter_btns{
+    background-color: #d50000;
+}
 /* ------------------------------------Edits to Materialize custom CSS */
 .slider{
     max-width: 600px;

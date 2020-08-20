@@ -9,11 +9,20 @@
       <form action="#">
         <div class="row">
           <div id="time_filter" class="col s12">
-             <h5 class="general_text_rule">Show me Dinosaurs from the</h5>
-          <a href="{{ url_for('cretaceous') }}" class="filter_btns btn">Cretaceous</a>
-          <a href="{{ url_for('jurassic') }}" class="filter_btns btn">Jurassic</a>
-          <a href="{{ url_for('triassic') }}" class="filter_btns btn">Triassic</a>
+            <h5 class="general_text_rule">Show me Dinosaurs from the</h5>
+            <a href="{{ url_for('cretaceous') }}" class="filter_btns btn"
+              >Cretaceous</a
+            >
+            <a href="{{ url_for('jurassic') }}" class="filter_btns btn"
+              >Jurassic</a
+            >
+            <a href="{{ url_for('triassic') }}" class="filter_btns btn"
+              >Triassic</a
+            >
             <h5 class="general_text_rule">Time Period</h5>
+            <a href="{{ url_for('main_page') }}" class="filter_btns btn"
+              >Show Full Database</a
+            >
           </div>
         </div>
       </form>

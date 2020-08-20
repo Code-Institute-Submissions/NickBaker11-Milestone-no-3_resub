@@ -26,7 +26,28 @@ def index():
 
 @app.route('/main_page')
 def main_page():
-    return render_template('main_page.html', dinoInfo=mongo.db.dinoInfo.find())
+    return render_template(
+        'main_page.html', dinoInfo=mongo.db.dinoInfo.find())
+
+
+@app.route('/cretaceous')
+def cretaceous():
+    return render_template(
+        'cretaceous.html', dinoInfo=mongo.db.dinoInfo.find(
+            {"time_period": "Cretaceous"}))
+
+
+@app.route('/jurassic')
+def jurassic():
+    return render_template(
+        'jurassic.html', dinoInfo=mongo.db.dinoInfo.find(
+            {"time_period": "Jurassic"}))
+
+@app.route('/triassic')
+def triassic():
+    return render_template(
+        'triassic.html', dinoInfo=mongo.db.dinoInfo.find(
+            {"time_period": "Triassic"}))
 
 
 @app.route('/final_page')
@@ -63,7 +84,8 @@ def edit_info(info_id):
 def update_info(info_id):
     info = mongo.db.dinoInfo
     info.update({'_id': ObjectId(info_id)},
-    {'name': request.form.get('name'), 
+                {
+     'name': request.form.get('name'),
      'time_period': request.form.get('time_period'),
      'diet': request.form.get('diet'),
      'height': request.form.get('height'),

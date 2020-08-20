@@ -28,7 +28,7 @@ This project will be an educational database aimed at children and teenagers wit
 * To do this I created a Heroku account and connected it to my GitHub account. I then enabled the 'automatic deploys' option and then 'Deploy Branch'. Heroku then generated the app and it is now accessible online through the above link. The branch deployed is my master branch.
 ## Issues
 * I am aware of the linting errors in my html files in templates. All of these are extentions of 'base.html' and therefore do no need the boilerplate with DOCTYPE etc. 
-* app.py and env.py both red errors. These do not affect the project and are linting errors
+* In app.py and env.py I had errors "'env' imported but unused" and "line too long (122 > 79 characters)" respectively. These are both linting errors and do not affect the project so I used the # noqa comment to disable the error warning.
 ## Credits
 ### Content
 * Is utilised videos from the Code Institute course to help write my code, especially in app.py
