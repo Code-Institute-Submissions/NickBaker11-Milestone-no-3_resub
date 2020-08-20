@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 if os.path.exists("env.py"):
-    import env
+    import env  # noqa: F401
 
 
 app = Flask(__name__)
@@ -63,14 +63,13 @@ def edit_info(info_id):
 def update_info(info_id):
     info = mongo.db.dinoInfo
     info.update({'_id': ObjectId(info_id)},
-    {
-        'name': request.form.get('name'),
-        'time_period': request.form.get('time_period'),
-        'diet': request.form.get('diet'),
-        'height': request.form.get('height'),
-        'speed': request.form.get('speed'),
-        'discovered_in': request.form.get('discovered_in'),
-        'extra_information': request.form.get('extra_information')
+    {'name': request.form.get('name'), 
+     'time_period': request.form.get('time_period'),
+     'diet': request.form.get('diet'),
+     'height': request.form.get('height'),
+     'speed': request.form.get('speed'),
+     'discovered_in': request.form.get('discovered_in'),
+     'extra_information': request.form.get('extra_information')
     })
     return redirect(url_for('main_page'))
 

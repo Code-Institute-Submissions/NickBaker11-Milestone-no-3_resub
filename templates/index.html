@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content%}
-<div class="general_text_rule">
+<div id="index_text" class="general_text_rule">
   <h2>Welcome to your Dinosaur Database!</h2>
 
   If you want to learn about dinosaurs and store what you've learnt, you're in
@@ -88,7 +88,7 @@
   <ul class="slides">
     <li>
       <img
-        class="img_slides"
+        class="img_slides responsive-img"
         src="{{ url_for('static', filename='images/steg.jpg') }}"
       />
       <div class="caption center-align">
@@ -100,7 +100,7 @@
     </li>
     <li>
       <img
-        class="img_slides"
+        class="img_slides responsive-img"
         src="{{ url_for('static', filename='images/trex.jpg') }}"
       />
       <div class="caption left-align light red-text text-accent-4">
@@ -112,7 +112,7 @@
     </li>
     <li>
       <img
-        class="img_slides"
+        class="img_slides responsive-img"
         src="{{ url_for('static', filename='images/titanosaur.jpg') }}"
       />
       <div class="caption right-align light black-text">

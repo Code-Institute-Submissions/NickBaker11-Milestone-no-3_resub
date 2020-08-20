@@ -20,7 +20,7 @@
     <title>The Dino Database</title>
   </head>
 
-  <body>
+  <body id="main_body">
     <header>
     
       <nav>
@@ -60,11 +60,12 @@
         </ul>
       </nav>
     </header>
-    
+    <!-- button to return user to top of page -->
    <a href="#top" id="return_top_btn" class="btn-floating #2e7d32 #d50000 red accent-4 btn-large hoverable" type="submit" name="return_top">
       
       <i class="material-icons right">arrow_upward</i>
     </a>
+    <!-- main background image -->
     <img
       class="background_img"
       src="{{ url_for('static', filename='images/Skeleton2.jpg') }}"

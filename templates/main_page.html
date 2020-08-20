@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block content %}
 
 <h2 class="general_text_rule">Your Dinosaur Database</h2>
+<!-- filters for database information -->
 <ul id="filters" class="collapsible">
   <li>
     <div id="filters_header" class="collapsible-header">Filters</div>
@@ -11,20 +12,20 @@
             <h5>Show me Dinosaurs from the...</h5>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="cretacious_cb">Cretacious Time Period</span>
+                <input id="cretacious_cb" type="checkbox" />
+                <span>Cretacious Time Period</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="jurassic_cb">Jurassic Time Period</span>
+                <input id="jurassic_cb" type="checkbox" />
+                <span >Jurassic Time Period</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="triassic_cb">Triassic Time Period</span>
+                <input id="triassic_cb" type="checkbox" />
+                <span>Triassic Time Period</span>
               </label>
             </p>
           </div>
@@ -32,20 +33,20 @@
             <h5>Show me Dinosaurs who are...</h5>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="herbivores_cb">Herbivores</span>
+                <input id="herbivores_cb" type="checkbox" />
+                <span>Herbivores</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="carnivores_cb">Carnivores</span>
+                <input id="carnivores_cb" type="checkbox" />
+                <span>Carnivores</span>
               </label>
             </p>
             <p>
               <label>
-                <input type="checkbox" />
-                <span id="omnivores_cb">Omnivores</span>
+                <input id="omnivores_cb" type="checkbox" />
+                <span>Omnivores</span>
               </label>
             </p>
           </div>
@@ -56,6 +57,7 @@
 </ul>
 {% include "database.html" %}
 <br />
+<!-- add new information database -->
 <a
   id="add_info_btn"
   href="{{ url_for('add_info') }}"
