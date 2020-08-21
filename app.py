@@ -43,6 +43,7 @@ def jurassic():
         'jurassic.html', dinoInfo=mongo.db.dinoInfo.find(
             {"time_period": "Jurassic"}))
 
+
 @app.route('/triassic')
 def triassic():
     return render_template(
@@ -63,7 +64,7 @@ def add_info():
             "name": request.form.get("name"),
             "time_period": request.form.get("time_period"),
             "diet": request.form.get("diet"),
-            "height": request.form.get("height"),
+            "length": request.form.get("length"),
             "speed": request.form.get("speed"),
             "discovered_in": request.form.get("discovered_in"),
             "extra_information": request.form.get("extra_information")
@@ -85,13 +86,13 @@ def update_info(info_id):
     info = mongo.db.dinoInfo
     info.update({'_id': ObjectId(info_id)},
                 {
-     'name': request.form.get('name'),
-     'time_period': request.form.get('time_period'),
-     'diet': request.form.get('diet'),
-     'height': request.form.get('height'),
-     'speed': request.form.get('speed'),
-     'discovered_in': request.form.get('discovered_in'),
-     'extra_information': request.form.get('extra_information')
+        'name': request.form.get('name'),
+        'time_period': request.form.get('time_period'),
+        'diet': request.form.get('diet'),
+        'length': request.form.get('length'),
+        'speed': request.form.get('speed'),
+        'discovered_in': request.form.get('discovered_in'),
+        'extra_information': request.form.get('extra_information')
     })
     return redirect(url_for('main_page'))
 
@@ -105,4 +106,4 @@ def delete_info(info_id):
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=False)
