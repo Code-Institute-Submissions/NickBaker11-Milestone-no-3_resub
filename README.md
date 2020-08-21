@@ -6,6 +6,9 @@ This project will be an educational database aimed at children and teenagers wit
 * As a user I want to have an organised place to store what I am learning so that I can look at it again.
 * As a user want to be able to update and delete the information I am inputting if there is new information to add to what I already have.
 
+## Wireframes
+* Here is a link to my wiresframes- https://github.com/NickBaker11/Milestone-no-3/blob/master/wireframes/MS3.pdf. The layout in my final project stayed roughly the same but certain visual aspects within the layout were altered for what I felt was a better user experience
+
 # Design Choices
 * As this website is an educational tool aimed at children, I wanted it the appeal to them visually. I tried a few different fonts and colour schemes and felt that the final ones chosen offered the best visual experience. A slightly childlike, easy to read font and a 'scary' colour scheme given the subject matter.
 * I kept the layout simple and easy to follow, with instructions on how best to enter information into the database. I feel that the site is intuitive but still wanted to give extra instructions without overwhelming the user.
