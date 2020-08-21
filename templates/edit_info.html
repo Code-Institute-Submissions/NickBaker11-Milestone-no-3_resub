@@ -2,67 +2,67 @@
 <h2 class="general_text_rule">Edit a database entry</h2>
 <!--name category-->
 <div class="row">
-  <form class="col s12" method="POST" action="{{ url_for('update_info', info_id=info._id) }}">
-    <div class="row">
-      <div class="input-field col s12 red-text text-accent-4">
-        <label class="red-text text-accent-4" for="name">First Name:</label>
-        <input id="name" name="name" value="{{ info.name }}" type="text" class="red-text text-accent-4 validate" required />
-      </div>
-    </div>
-        <!--time period category-->
-    <div class="row">
-      <div class="input-field col s12">
-        <select id="time_period" name="time_period">
-          <option value="" disabled >Choose your option</option>
-            <option id="current_time_period" value="{{ info.time_period }}"  selected>{{ info.time_period }}</option>
-            <option value="___" disabled>__________________________________</option>
-            <option value="Triassic">Triassic</option>
-            <option value="Jurassic">Jurassic</option>
-            <option value="Cretaceous">Cretaceous</option>
-        </select>
-        <label class="red-text text-accent-4" for="time_period">Time Period:</label>
-      </div>
-    </div>
-    <!--diet category-->
-    <div class="row">
-      <div class="input-field col s12">
-        <label class="red-text text-accent-4" for="diet">Diet:</label>
-        <input id="diet"  name="diet" value="{{ info.diet }}" type="text" class="red-text text-accent-4 validate" required />
-      </div>
-    </div>
-    <!--length category-->
-    <div class="row">
-      <div class="input-field col s12">
-        <label class="red-text text-accent-4" for="length">Length:</label>
-        <input id="length" name="length" value="{{ info.length }}" type="text" class="red-text text-accent-4 validate" required />
-      </div>
-    </div>
-    <!--speed category-->
-    <div class="row">
-      <div class="input-field col s12">
-        <label class="red-text text-accent-4" for="speed">Speed:</label>
-        <input id="speed" name="speed" value="{{ info.speed }}" type="text" class="red-text text-accent-4 validate" required />
-      </div>
-    </div>
-    <!--discovererd in category-->
-    <div class="row">
-      <div class="input-field col s12">
-        <label class="red-text text-accent-4" for="discovered_in">Discovered In:</label>
-        <input id="discovered_in" name="discovered_in" value="{{ info.discovered_in }}" type="text" class="red-text text-accent-4 validate" required />
-      </div>
-    </div>
-    <!--extra information in category-->
+   <form class="col s12" method="POST" action="{{ url_for('update_info', info_id=info._id) }}">
       <div class="row">
-        <div class="input-field col s12">
-          <label class="red-text text-accent-4" for="extra_information">Extra Information:</label>
-          <input id="extra_information" name="extra_information" type="text" class="materialize-textarea validate red-text text-accent-4" value="{{ info.extra_information }}" required>          
-        </div>
+         <div class="input-field col s12 red-text text-accent-4">
+            <label class="red-text text-accent-4" for="name">First Name:</label>
+            <input id="name" name="name" value="{{ info.name }}" type="text" class="red-text text-accent-4 validate" required />
+         </div>
       </div>
-    <!--submit button-->
-    <button id="edit_submit" class="btn #2e7d32 red accent-4 btn-large" type="submit" name="edit_submit">
+      <!--time period category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <select id="time_period" name="time_period">
+               <option value="" disabled >Choose your option</option>
+               <option id="current_time_period" value="{{ info.time_period }}"  selected>{{ info.time_period }}</option>
+               <option value="___" disabled>__________________________________</option>
+               <option value="Triassic">Triassic</option>
+               <option value="Jurassic">Jurassic</option>
+               <option value="Cretaceous">Cretaceous</option>
+            </select>
+            <label class="red-text text-accent-4" for="time_period">Time Period:</label>
+         </div>
+      </div>
+      <!--diet category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label class="red-text text-accent-4" for="diet">Diet:</label>
+            <input id="diet"  name="diet" value="{{ info.diet }}" type="text" class="red-text text-accent-4 validate" required />
+         </div>
+      </div>
+      <!--length category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label class="red-text text-accent-4" for="length">Length:</label>
+            <input id="length" name="length" value="{{ info.length }}" type="text" class="red-text text-accent-4 validate" required />
+         </div>
+      </div>
+      <!--speed category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label class="red-text text-accent-4" for="speed">Speed:</label>
+            <input id="speed" name="speed" value="{{ info.speed }}" type="text" class="red-text text-accent-4 validate" required />
+         </div>
+      </div>
+      <!--discovererd in category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label class="red-text text-accent-4" for="discovered_in">Discovered In:</label>
+            <input id="discovered_in" name="discovered_in" value="{{ info.discovered_in }}" type="text" class="red-text text-accent-4 validate" required />
+         </div>
+      </div>
+      <!--extra information in category-->
+      <div class="row">
+         <div class="input-field col s12">
+            <label class="red-text text-accent-4" for="extra_information">Extra Information:</label>
+            <input id="extra_information" name="extra_information" type="text" class="materialize-textarea validate red-text text-accent-4" value="{{ info.extra_information }}" required>          
+         </div>
+      </div>
+      <!--submit button-->
+      <button id="edit_submit" class="btn #2e7d32 red accent-4 btn-large" type="submit" name="edit_submit">
       Edit
       <i class="material-icons right"></i>
-    </button>
-  </form>
+      </button>
+   </form>
 </div>
 {% endblock %}

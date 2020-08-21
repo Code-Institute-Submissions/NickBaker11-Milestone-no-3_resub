@@ -1,33 +1,30 @@
 {% extends "base.html" %} {% block content %}
-
 <h2 class="general_text_rule">Your Dinosaur Database</h2>
 <!-- filters for database information -->
 <ul id="filters" class="collapsible">
-  <li>
-    <div id="filters_header" class="collapsible-header">Time Period Filters</div>
-    <div class="collapsible-body">
-      <form action="#">
-        <div class="row">
-          <div id="time_filter" class="col s12">
-             <h5 class="general_text_rule">Show me Dinosaurs from the</h5>
-          <a id="cretaceous_btn" href="{{ url_for('cretaceous') }}" class="filter_btns btn">Cretaceous</a>
-          <a id="jurassic_btn" href="{{ url_for('jurassic') }}" class="filter_btns btn">Jurassic</a>
-          <a id="triassic_btn" href="{{ url_for('triassic') }}" class="filter_btns btn">Triassic</a>
-            <h5 class="general_text_rule">Time Period</h5>
-          </div>
-        </div>
-      </form>
-    </div>
-  </li>
+   <li>
+      <div id="filters_header" class="collapsible-header">Time Period Filters</div>
+      <div class="collapsible-body">
+         <form action="#">
+            <div class="row">
+               <div id="time_filter" class="col s12">
+                  <h5 class="general_text_rule">Show me Dinosaurs from the</h5>
+                  <a id="cretaceous_btn" href="{{ url_for('cretaceous') }}" class="filter_btns btn">Cretaceous</a>
+                  <a id="jurassic_btn" href="{{ url_for('jurassic') }}" class="filter_btns btn">Jurassic</a>
+                  <a id="triassic_btn" href="{{ url_for('triassic') }}" class="filter_btns btn">Triassic</a>
+                  <h5 class="general_text_rule">Time Period</h5>
+               </div>
+            </div>
+         </form>
+      </div>
+   </li>
 </ul>
 <!-- add new information database -->
 <a
-  id="add_info_btn"
-  href="{{ url_for('add_info') }}"
-  class="btn-floating btn-large #000000 black hoverable"
-  ><i class="material-icons">add</i></a
->
+   id="add_info_btn"
+   href="{{ url_for('add_info') }}"
+   class="btn-floating btn-large #000000 black hoverable"
+   ><i class="material-icons">add</i></a
+   >
 {% include "database.html" %}
-
-
 {% endblock %}
